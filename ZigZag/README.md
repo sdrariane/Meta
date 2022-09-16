@@ -1,24 +1,18 @@
-ZigZag
-50 points
-Problem
-We have updated the inputs and outputs of the first coding challenge (ZigZag). Please download the full input file again to have the updated version.
-ZigZag is a logic-based, combinatorial number-placement puzzle, similar to Sudoku. The objective is to fill a 9x9 grid so that each zig, zag and square contain all the digits from 0 to 8, inclusive, exactly once.
-Zigs are diagonals, running from top left to bottom-right and wrapping around. Zags are diagonals, running from top-right to bottom-left (orthogonal to the zigs) and squares are 3x3 sub-grids, similar to Sudoku.
-The following diagrams indicate which Zigs, Zags and Squares each cell in a ZigZag belongs to. In the Zigs diagram (left), all the cells in a Zig share a color and are connected by lines to a cell with the Zig's numeric label. The Zags and Squares diagrams are organised similarly:
-Note that Zigs and Zags wrap around the grid, so each label appears twice in these diagrams.
-Given a list of unfinished ZigZags, provide the sum of the values of their top-left cells. Note that for every ZigZag grid in the input, it's guaranteed that the value of its top-left cell can be deduced by looking at just the cells in Zig 0, Zag 0, and Square 0.
-Input
-The input file format is as follows:
-The first line contains a single integer N, indicating the number of grids to follow.
-Each grid is printed with each of its rows on its own line.
-The "." character indicates an empty cell.
-Grids are separated from each other with an empty line.
-Output
-Your output should be a file containing a single line with a number that's the sum of the values of the top-left cells of all grids, after the puzzles have been solved.
-Constraints
-1 ≤ N ≤ 10,000
-Explanation of Sample
-There are 3 puzzles in the sample. After solving all of them, the sum of the top left cells of all three of them is 1 + 8 + 4 = 13
+<H1>ZigZag </H1>
+<p> ZigZag is a logic-based, combinatorial number-placement puzzle, similar to Sudoku. The objective is to fill a 9x9 grid so that each zig, zag and square contain all the digits from 0 to 8, inclusive, exactly once. </P>
+<P>Zigs are diagonals, running from top left to bottom-right and wrapping around. Zags are diagonals, running from top-right to bottom-left (orthogonal to the zigs) and squares are 3x3 sub-grids, similar to Sudoku</p>
+<p>The following diagrams indicate which Zigs, Zags and Squares each cell in a ZigZag belongs to. In the Zigs diagram (left), all the cells in a Zig share a color and are connected by lines to a cell with the Zig's numeric label. The Zags and Squares diagrams are organised similarly:</p>
+<p>Note that Zigs and Zags wrap around the grid, so each label appears twice in these diagrams.</P>
+<p>Given a list of unfinished ZigZags, provide the sum of the values of their top-left cells. Note that for every ZigZag grid in the input, it's guaranteed that the value of its top-left cell can be deduced by looking at just the cells in Zig 0, Zag 0, and Square 0. </p>
+<h3>Input</h3>
+<p>The input file format is as follows: the first line contains a single integer N, indicating the number of grids to follow; each grid is printed with each of its rows on its own line; the "." character indicates an empty cell; grids are separated from each other with an empty line.</P>
+<h3>Output</h3>
+<p>Your output should be a file containing a single line with a number that's the sum of the values of the top-left cells of all grids, after the puzzles have been solved.</p>
+<h3>Constraints</p>
+<pre>1 ≤ N ≤ 10,000</pre>
+<h3>Explanation of Sample</h3>
+<p>There are 3 puzzles in the sample. After solving all of them, the sum of the top left cells of all three of them is 1 + 8 + 4 = 13 </p>
+
 ```
 #Sample Input
 3
@@ -54,5 +48,3 @@ There are 3 puzzles in the sample. After solving all of them, the sum of the top
 #Sample Output
 13
 ```
-<h1> My Explanation </h1>
-<p> Os números dizem respeito ao quão assustador são as montanhas-russas 1, 2, 3 ou 4 em uma escala de 1-4. Dentro dessas numerações, precisamos analisar quais são MENOS assustadoras e disponibilizar de acordo com essa análise quantos pontos de diversão (de 1 a 10.000), Bob pderá utilizar - limitado a quantas montanhas-russas ele poderá ir.</p>
