@@ -2,6 +2,9 @@
 <p> ZigZag is a logic-based, combinatorial number-placement puzzle, similar to Sudoku. The objective is to fill a 9x9 grid so that each zig, zag and square contain all the digits from 0 to 8, inclusive, exactly once. </P>
 <P>Zigs are diagonals, running from top left to bottom-right and wrapping around. Zags are diagonals, running from top-right to bottom-left (orthogonal to the zigs) and squares are 3x3 sub-grids, similar to Sudoku</p>
 <p>The following diagrams indicate which Zigs, Zags and Squares each cell in a ZigZag belongs to. In the Zigs diagram (left), all the cells in a Zig share a color and are connected by lines to a cell with the Zig's numeric label. The Zags and Squares diagrams are organised similarly:</p>
+
+<img src='./image.png'/>
+
 <p>Note that Zigs and Zags wrap around the grid, so each label appears twice in these diagrams.</P>
 <p>Given a list of unfinished ZigZags, provide the sum of the values of their top-left cells. Note that for every ZigZag grid in the input, it's guaranteed that the value of its top-left cell can be deduced by looking at just the cells in Zig 0, Zag 0, and Square 0. </p>
 <h3>Input</h3>
